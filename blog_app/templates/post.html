@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <a href="/">Back to Homepage</a>
+    <a href="/edit/{{ post.id }}">Edit Post</a>
+    <form action="/delete/{{ post.id }}" method="post">
+        <input type="submit" value="Delete Post">
+    </form>
+</body>
+</html>
